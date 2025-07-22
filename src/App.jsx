@@ -23,6 +23,14 @@ function App() {
   ]);
   console.log(bestScore, selected);
 
+  function handleClick(e) {
+    setSelected((prevSelected) => [...prevSelected, e.target.name]);
+    console.log(selected);
+    scoreCheck(e.target.name, selected, setScore, setBestScore, setSelected);
+    const shuffled = shuffle(pokedex);
+    setPokedex(shuffled);
+  }
+
   return (
     <>
       <div className="flex-wrapper">
