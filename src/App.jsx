@@ -34,7 +34,7 @@ function App() {
   return (
     <>
       <div className="flex-wrapper">
-        <h1>Pokemon Memory Game</h1>
+        <h1>Pokemon Card Memory Game</h1>
         <span>
           Get points by clicking on an image but don't click on any more than
           once!
